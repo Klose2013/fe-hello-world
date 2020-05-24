@@ -1,24 +1,24 @@
 window.onload = function () {
     imgLocation("container", "box");
-    var imgData = {"data": [{"src": "2.jpg"}, {"src": "3.jpg"}, {"src": "4.jpg"}, {"src": "5.jpg"}, {"src": "6.jpg"}]};
-
-    window.onscroll = function () {
-        if (checkFlag()) {
-            var cparent = document.getElementById("container");
-            for (var i = 0; i < imgData.data.length; i++) {
-                var ccontent = document.createElement("div");
-                ccontent.className = "box";
-                cparent.appendChild(ccontent);
-                var boximg = document.createElement("div");
-                boximg.className = "box_img";
-                cparent.appendChild(boximg);
-                var img = document.createElement("img");
-                img.src = "img/" + imgData.data[i].src;
-                boximg.appendChild(img);
-            }
-            imgLocation("container", "box");
-        }
-    }
+    // var imgData = {"data": [{"src": "2.jpg"}, {"src": "3.jpg"}, {"src": "4.jpg"}, {"src": "5.jpg"}, {"src": "6.jpg"}]};
+    //
+    // window.onscroll = function () {
+    //     if (checkFlag()) {
+    //         var cparent = document.getElementById("container");
+    //         for (var i = 0; i < imgData.data.length; i++) {
+    //             var ccontent = document.createElement("div");
+    //             ccontent.className = "box";
+    //             cparent.appendChild(ccontent);
+    //             var boximg = document.createElement("div");
+    //             boximg.className = "box_img";
+    //             cparent.appendChild(boximg);
+    //             var img = document.createElement("img");
+    //             img.src = "img/" + imgData.data[i].src;
+    //             boximg.appendChild(img);
+    //         }
+    //         imgLocation("container", "box");
+    //     }
+    // }
 }
 
 
